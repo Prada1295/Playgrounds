@@ -91,3 +91,17 @@ repeat {
 } while counter < 5
 
 print("Counter value: \(counter)")
+
+let zooAnimal: String? = "Lion"
+let foodAnimal: String? = "Meat"
+
+switch (zooAnimal, foodAnimal) {
+case (.some("Lion"), .some("Meat")):
+    print("A lion eats meat.")
+case (.some("Tiger"), .some("Fish")):
+    print("A tiger eats fish.")
+default:
+    print("We don't know what animal eats what.")
+}
+
+
