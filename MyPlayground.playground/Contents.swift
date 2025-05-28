@@ -62,3 +62,32 @@ let otherNames = "Vandad" + "Foo" + "Bar"
 
 let age = 30
 let message = age >= 18 ? "You are an adult" : "You are a minor"
+
+/// If and Else
+///
+/// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+let car = "Toyota Camry"
+let isElectricCar: Bool = false
+
+if isElectricCar {
+    print("\(car) is an electric car")
+} else {
+    print("\(car) is a gasoline car")
+}
+
+
+let numberOfApples: Int = 5
+
+if numberOfApples > 0 {
+    print("You have \(numberOfApples) apples.")
+} else {
+    print("You have no apples letf")
+}
+
+var counter: Int = 0
+
+repeat {
+    counter += 1
+} while counter < 5
+
+print("Counter value: \(counter)")
