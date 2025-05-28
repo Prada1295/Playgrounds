@@ -1,6 +1,7 @@
 /// Variables
 ///
 ///
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 let myName: String = "Vandad"
 var yourName: String = "Foo"
@@ -31,4 +32,33 @@ newArray.append(4)
 newArray
 oldArray
 
+/// Operators
+///
+///
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+let myAge: Int = 25
+let yourAge: Int = 26
+
+if myAge > yourAge {
+    "I am older than you"
+} else if myAge < yourAge {
+    "I am younger than you"
+} else {
+    "Look, we are the same age!"
+}
+
+let myMothersAge = myAge + 30
+let doubleMyAge = myAge * 2
+
+/// 1. Unary Prefix
+var foo3 = !true
+/// 2. Unary Postfix
+let name = Optional ( "Vandad")
+let unaryPostfix = name!
+/// 3. Binary infix
+let result = 1 + 2
+let otherNames = "Vandad" + "Foo" + "Bar"
+
+let age = 30
+let message = age >= 18 ? "You are an adult" : "You are a minor"
