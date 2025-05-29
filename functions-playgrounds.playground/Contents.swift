@@ -38,6 +38,13 @@ func customMinus(
 }
 
 let custommSubstracted = customMinus(
-    10,
+    /*a:*/10,/*when you have the underscored like previous func customMinus (_ lhs: Int) you can evade the caller (a: Int)*/
     20
 )
+
+func myCustomAdd(
+    _ lhs: Int,
+    _ rhs: Int
+) -> Int {
+    lhs + rhs
+}
