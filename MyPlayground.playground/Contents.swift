@@ -92,8 +92,10 @@ repeat {
 
 print("Counter value: \(counter)")
 
-let zooAnimal: String? = "Lion"
-let foodAnimal: String? = "Meat"
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let zooAnimal = ["Lion", "Tiger", "Jiraffe", "Octopus", "Monkey", "Eel"].randomElement()
+let foodAnimal = ["Meat", "Fish", "Leaves", "Bananas"].randomElement()
 
 switch (zooAnimal, foodAnimal) {
 case (.some("Lion"), .some("Meat")):
@@ -104,4 +106,25 @@ default:
     print("We don't know what animal eats what.")
 }
 
+if zooAnimal == "Jiraffe"
+    && foodAnimal == "Meat" {
+    print( "A lion eats meat.")
+} else if zooAnimal == "Jiraffe" && foodAnimal == "Leaves" {
+    print("A Jiraffe eats leaves")
+} else {
+    print("The Food and Animal combination is not known.")
+}
 
+if let zooAnimal = zooAnimal, let foodAnimal = foodAnimal {
+    if zooAnimal == "Lion" && foodAnimal == "Meat" {
+        print("A lion eats meat.")
+    } else if zooAnimal == "Tiger" && foodAnimal == "Fish" {
+        print("A tiger eats fish.")
+    }
+}
+
+if zooAnimal == "Monkey" || foodAnimal == nil {
+    print("The Monkey has no food")
+} else if zooAnimal == nil || foodAnimal == "Leaves" {
+    print("")
+}
