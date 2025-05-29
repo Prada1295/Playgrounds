@@ -41,10 +41,32 @@ let custommSubstracted = customMinus(
     /*a:*/10,/*when you have the underscored like previous func customMinus (_ lhs: Int) you can evade the caller (a: Int)*/
     20
 )
-
+@discardableResult/*When you're using this within iOS App you can use this case to avoid the non underscore in the functions*/
 func myCustomAdd(
     _ lhs: Int,
     _ rhs: Int
 ) -> Int {
     lhs + rhs
+}
+
+myCustomAdd(
+    10,
+    20
+)
+
+func doSomethingComplicated(
+    with value: Int
+) -> Int {
+    func mainLogic(value: Int) -> Int {
+        value + 2
+    }
+    return mainLogic(value: value + 3)
+}
+ doSomethingComplicated(with: 30)
+
+func getFullName(
+    firstName: String = "Andres",
+    lastName: String = "Soto"
+) -> String {
+    "⁄\(firstName) \(lastName)/"
 }

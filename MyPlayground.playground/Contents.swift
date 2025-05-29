@@ -128,3 +128,21 @@ if zooAnimal == "Monkey" || foodAnimal == nil {
 } else if zooAnimal == nil || foodAnimal == "Leaves" {
     print("")
 }
+
+
+let anyGem = [
+    "Amethyst",
+    "Aquamarine",
+    "Emerald",
+    "Ruby",
+    "Sapphire",
+    "Topaz",
+    "Opal",
+    "Peridot"
+]
+
+let brazeletGems: Set<String> = ["Amethyst", "Emerald", "Ruby", "Sapphire"]
+
+let matchingGems: [String] = anyGem.filter { brazeletGems.contains($0) }
+
+print("Matching gems: \(matchingGems)")
